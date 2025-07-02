@@ -1,0 +1,89 @@
+body {
+    background-color: #FFFFFF; /* Fundo branco limpo */
+    font-family: 'Lora', serif; /* Fonte Lora para todo o corpo */
+    color: #bbbbbb00; /* Texto em cinza escuro */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima para desktops */
+    margin: 0 auto; /* Centraliza o contêiner principal */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box;
+    /* Removendo flexbox vertical e min-height do container, pois o logo não está mais no rodapé */
+}
+
+main {
+    text-align: left; /* Alinha o texto à esquerda */
+    /* Removendo flex-grow: 1; pois não precisamos mais empurrar o footer */
+}
+
+h1 {
+    font-family: 'Lora', serif; /* Usando a mesma fonte Lora para o título */
+    font-size: 3em; /* Um título impactante */
+    color: #bbbbbb00; /* Azul marinho escuro, cor comum em identidade visual de bancos */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.location {
+    font-size: 1.1em;
+    color: #bbbbbb00;
+    margin-bottom: 10px; /* Espaço abaixo da localização e antes do logo */
+}
+
+.logo {
+    max-width: 180px; /* Tamanho do logo */
+    height: auto;
+    display: block; /* Garante que o logo ocupe sua própria linha */
+    margin-bottom: 30px; /* Espaço abaixo do logo e antes da descrição */
+    /* O logo já estará alinhado à esquerda por padrão dentro do main */
+}
+
+.description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 750px; /* Limita a largura do texto para melhor leitura */
+}
+
+/* Removemos o estilo do footer, pois ele não existe mais */
+/* footer {
+    margin-top: auto;
+    text-align: left;
+    padding-top: 30px;
+    border-top: 1px solid #EEE;
+} */
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduz o padding em telas menores */
+    }
+
+    .logo {
+        max-width: 130px; /* Reduz o tamanho do logo em telas menores */
+    }
+
+    h1 {
+        font-size: 2.2em; /* Reduz o tamanho do título */
+    }
+
+    .description {
+        font-size: 1em; /* Reduz o tamanho do texto da descrição */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
