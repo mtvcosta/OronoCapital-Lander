@@ -1,7 +1,7 @@
 body {
     background-color: #FFFFFF; /* Fundo branco limpo */
     font-family: 'Lora', serif; /* Fonte Lora para todo o corpo */
-    color: #bbbbbb00; /* Texto em cinza escuro */
+    color: #333; /* Texto em cinza escuro */
     margin: 0; /* Remove margens padrão do body */
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +23,7 @@ main {
 h1 {
     font-family: 'Lora', serif; /* Usando a mesma fonte Lora para o título */
     font-size: 3em; /* Um título impactante */
-    color: #bbbbbb00; /* Azul marinho escuro, cor comum em identidade visual de bancos */
+    color: #333; /* Azul marinho escuro, cor comum em identidade visual de bancos */
     margin-bottom: 10px;
     letter-spacing: 1px;
     line-height: 1.2;
@@ -31,7 +31,7 @@ h1 {
 
 .location {
     font-size: 1.1em;
-    color: #bbbbbb00;
+    color: #333;
     margin-bottom: 10px; /* Espaço abaixo da localização e antes do logo */
 }
 
